@@ -1,38 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-// import { FormControl, Validators } from '@angular/forms';
-// import { TaskAddDTO, Task } from 'src/app/models/task';
-// import { TaskService } from 'src/app/services/task.service';
-
-// @Component({
-//   selector: 'app-add-task',
-//   templateUrl: './add-task.component.html',
-//   styleUrls: ['./add-task.component.css']
-// })
-// export class AddTaskComponent implements OnInit {
-//   title: FormControl = new FormControl('', Validators.required);
-//   cat: FormControl = new FormControl('', Validators.required);
-//   completed: FormControl = new FormControl('false');
-//   id: FormControl = new FormControl('');
-
-//   constructor(private ts: TaskService) { }
-
-//   ngOnInit(): void {
-//   }
-
-//   addTask(): void {
-//     const task: TaskAddDTO = {
-//       title: this.title.value,
-//       cat: this.cat.value,
-//       completed: this.completed.value,
-//       id: this.id.value
-//     };
-
-//     this.ts.addTask(task).subscribe((newTask: Task) => {
-//       console.log(`Task added successfully with ID ${newTask.id}`);
-//     });
-//   }
-// }
-
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
