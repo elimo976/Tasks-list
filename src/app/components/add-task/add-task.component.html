@@ -1,0 +1,21 @@
+<div class="container">
+    <h3>Aggiungi Task</h3>
+    <hr>
+  </div>
+  <div class="col-md-6 mx-5 my-5">
+    <form class="mx-5">
+      <div class="form-group mb-3">
+        <label class="form-label" for="title">Inserisci titolo</label>
+        <input type="text" id="title" class="form-control" [formControl]="title">
+      </div>
+      <div class="form-group mb-3">
+        <label class="form-label" for="cat">Inserisci categoria</label>
+        <input type="text" id="cat" class="form-control" [formControl]="cat">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="completed" class="form-check-input" [formControl]="completed">
+        <label for="completed" class="form-check-label">Task completato</label>
+      </div>
+      <button type="button" class="btn btn-primary mt-4" (click)="addTask()">Aggiungi</button>
+    </form>
+  </div>

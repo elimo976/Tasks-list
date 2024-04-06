@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+footer{
+    background-color: #292929;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+.cardDimensione {
+    width: 300px;
+    height: 200px;
+}

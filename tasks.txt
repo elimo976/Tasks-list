@@ -1,0 +1,86 @@
+STOP&CODE #1 Angular Avanzato
+
+ 
+
+Creare una semplice applicazione per la gestione di una lista di task memorizzati su un file json servito tramite un json server.
+
+ 
+
+In questo modo avrai un server locale in esecuzione all'indirizzo http://localhost:3000 che simula un backend RESTful utilizzando il file JSON come database.
+
+ 
+
+L'endpoint principale dove visualizzare la lista dei task sarà: http://localhost:3000/tasks
+
+ 
+
+Il file ( tasks.json ) avrà  una struttura simile a questa e che potrete personalizzare:
+
+ 
+
+[
+
+  { "id": 1, "title": "Task 1", "categoria": "categoria 1", "completed": true },
+
+  { "id": 2, "title": "Task 2", "categoria": "categoria 2", "completed": false },
+
+  { "id": 3, "title": "Task 3", "categoria": "categoria 3", "completed": false },
+
+ 
+
+.... altri task in elenco ....
+
+ 
+
+ { "id": N, "title": "Task N", "categoria": "categoria N ", "completed": true }
+
+ 
+
+]
+
+ 
+
+Gli utenti potranno visualizzare, aggiungere e  rimuovere task.
+
+Inoltre, utilizzare il routing per navigare tra diverse sezioni dell'applicazione.
+
+ 
+
+L'applicazione va strutturata con il seguente layout:
+
+- header  con le voci di menu Home, Prodotti
+
+- sidebar dove sono elencate le singole categorie utilizzate
+
+- footer 
+
+- corpo centrale dove sono visualizzati i risultati
+
+ 
+
+ 
+
+Richieste:
+
+Mostrare una lista di task recuperati dal Json Server tramite una richiesta HTTP GET
+Aggiungere un nuovo task tramite una richiesta HTTP POST.
+Rimuovere uno specifico task tramite una richiesta HTTP DELETE.
+Implementare un SERVICE per gestire la logica di business e la comunicazione HTTP.
+Utilizzare il doppio binding per visualizzare e aggiungere i dati dei task.
+
+Suggerimenti
+
+Creare un componente TaskListComponent per visualizzare la lista dei task.
+Creare un componente AddTaskComponent per aggiungere nuovi task.
+Creare un servizio TaskService per gestire la logica di business e la comunicazione HTTP.
+ 
+
+Consegnare entro domenica 7/04 all'indirizzo
+
+- ivano@labforweb.academy
+
+- antonio@labforweb.academy
+
+ 
+
+Buon lavoro
