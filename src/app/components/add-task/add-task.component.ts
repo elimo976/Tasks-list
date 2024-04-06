@@ -29,7 +29,7 @@ export class AddTaskComponent implements OnInit {
 
     this.ts.addTask(task).subscribe({
       next: (newTask: Task) => {
-        if (confirm(`Task aggiunto con successo`)) {
+        if (confirm(`Task aggiunto con successo!`)) {
           this.router.navigate(['/']);
         }
       },
