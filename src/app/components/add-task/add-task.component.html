@@ -16,6 +16,6 @@
         <input type="checkbox" id="completed" class="form-check-input" [formControl]="completed">
         <label for="completed" class="form-check-label">Task completato</label>
       </div>
-      <button type="button" class="btn btn-primary mt-4" (click)="addTask()">Aggiungi</button>
+      <button type="button" class="btn btn-primary mt-4" (click)="addTask()" [disabled]="title.invalid || cat.invalid">Aggiungi</button>
     </form>
   </div>

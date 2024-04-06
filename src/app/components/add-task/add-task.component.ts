@@ -45,7 +45,7 @@ import { TaskService } from 'src/app/services/task.service';
   styleUrls: ['./add-task.component.css']
 })
 export class AddTaskComponent implements OnInit {
-  title: FormControl = new FormControl('', Validators.required);
+  title: FormControl = new FormControl('', [Validators.required, Validators.minLength(4), Validators.maxLength(50)]);
   cat: FormControl = new FormControl('', Validators.required);
   completed: FormControl = new FormControl(false);
 
